@@ -1,5 +1,6 @@
 package com.example.viveoplayer;
 
+import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFormat(PixelFormat.TRANSLUCENT);
         setContentView(R.layout.activity_main);
         VideoView videoView = findViewById(R.id.videoView);
        // String path = "android.resourse://" + getPackageName() + "/" + R.raw.vid;
